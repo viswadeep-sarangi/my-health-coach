@@ -1,0 +1,7 @@
+services:
+  health-coach-app:
+    build: .
+    container_name: health-coach-app
+    ports:
+      - "8080:80"
+    restart: unless-stopped
